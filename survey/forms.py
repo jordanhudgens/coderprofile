@@ -4,7 +4,7 @@ from survey.models import Question, Category, Survey, Response, AnswerText, Answ
 from django.utils.safestring import mark_safe
 import uuid
 import ptest
-from pfunctions import question_finder as other_question_finder
+from pfunctions import question_finder 
 
 # blatantly stolen from 
 # http://stackoverflow.com/questions/5935546/align-radio-buttons-horizontally-in-django-forms?rq=1
@@ -110,7 +110,8 @@ class ResponseForm(models.ModelForm):
 				print a.question.text
 				print 'answer value:'
 				print field_value
-				other_question_finder(a.question.text, field_value)
+				question_finder(a.question.text, field_value)
+				print 'after question finder'
 				a.response = response
 				a.save()
 		return response

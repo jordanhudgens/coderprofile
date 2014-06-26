@@ -10,3 +10,4 @@ X = Variable()
 q = Query(father("michael",X))
 while q.nextSolution():
       print "Hello,", X.value
+q.closeQuery()
