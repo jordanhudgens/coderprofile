@@ -24,7 +24,7 @@ Thanks! Your confirmation code is {{uuid}}. Use this to refer to your response. 
 
 <b>We suggest the subject enroll in the following courses:</b>
 {% for myResult in classSuggested %}
-{{myResult}}<br/>
+    {{myResult}}
 {% endfor %}
 
 

@@ -18,7 +18,20 @@ def question_finder(question, ans):
       p.assertz('projectdesired(generalprogramming)')
   
   # Question 2:  Budget
-
+  if question == "What is your budget?":
+    if ans == "$0":
+      p.assertz('budget(0)')
+    if ans == "$50-$250":
+      p.assertz('budget(250)')
+    if ans == "$251-$500":
+      p.assertz('budget(500)') 
+    if ans == "$501-$1000":
+      p.assertz('budget(1000)')
+    if ans == "$1001-$1500":
+      p.assertz('budget(1500)') 
+    if ans == "$1501+":
+      p.assertz('budget(1000000)') 
+      
   # Question 3:  Level of Education
   if question == "What is the highest level of education you've completed?":
     if ans == "High School":
@@ -58,6 +71,19 @@ def question_finder(question, ans):
       p.assertz('employment(none)')
   
   # Question 7:  Weekly Time Dedication
+  if question == "How many hours can you dedicate to learning each week?":
+    if ans == "5":
+      p.assertz('hoursfree(5)')
+    if ans == "6-10":
+      p.assertz('hoursfree(10)')
+    if ans == "11-20":
+      p.assertz('hoursfree(20)') 
+    if ans == "21-30":
+      p.assertz('hoursfree(30)')
+    if ans == "31-40":
+      p.assertz('hoursfree(40)') 
+    if ans == "40+":
+      p.assertz('hoursfree(168)') 
   
   # Question 8:  Feature Driven Developer
   if question == "Do you like to see the potential features you're going to build before learning how to implement them?":
@@ -78,7 +104,7 @@ def question_finder(question, ans):
       p.assertz('mentor(notmentordriven)')
   
   # Question 10: Audience
-  if question == "What type of audience do you want to develop for? I want to build:":
+  if question == "What type of audience do you want to develop for? I want to build: ":
     if ans == "Business applications":
       p.assertz('targetaudience(business)')
     if ans == "Games":
@@ -100,9 +126,9 @@ def question_finder(question, ans):
   # Question 12: High Speed Internet Status
   if question == "Do you have access to high speed internet?":
     if ans == "Yes":
-      p.assertz('hsinternet(hashighspeed)')
+      p.assertz('highspeedinternet(highspeed)')
     if ans == "No":
-      p.assertz('hsinternet(haslowspeed)')
+      p.assertz('highspeedinternet(lowspeed)')
   
   # Question 13: Code Motivation
   if question == "Why do you want to learn to code?":
@@ -124,43 +150,51 @@ def question_finder(question, ans):
   
   # Question 15: Timeframe for Learning 
   if question == "What is your timeframe?":
-      
+    if ans == "< 30 days":
+      p.assertz('timeframe(month)')
+    if ans == "31-90 days":
+      p.assertz('timeframe(quarter)')
+    if ans == "91+ days":
+      p.assertz('timeframe(year)')
+            
     ###################################################  
     ##################### QUERIES #####################
     ###################################################
     
-    for soln in p.query("projectdesired(X)."):
-      print "1) Type of projects desired:", soln["X"]
-      
-    for soln in p.query("education(X)."):
-      print "3) Level of education:", soln["X"]
     
-    for soln in p.query("experience(X)."):
-      print "4) Programming experience:", soln["X"]
-      
-    for soln in p.query("priority(X)."):
-      print "5) Learning priority:", soln["X"]
+#    for soln in p.query("projectdesired(X)."):
+#      print "1) Type of projects desired:", soln["X"]
+#      
+#    for soln in p.query("education(X)."):
+#      print "3) Level of education:", soln["X"]
+#   
+#    for soln in p.query("experience(X)."):
+#      print "4) Programming experience:", soln["X"]
+#      
+#    for soln in p.query("priority(X)."):
+#      print "5) Learning priority:", soln["X"]
+#
+#    for soln in p.query("employment(X)."):
+#      print "6) Employment status:", soln["X"]
+#      
+#    for soln in p.query("featuredriven(X)."):
+#      print "8) Feature Driven:", soln["X"]
+#
+#    for soln in p.query("mentor(X)."):
+#      print "9) Mentor Driven:", soln["X"]
+#      
+#    for soln in p.query("targetaudience(X)."):
+#      print "10) Target audience:", soln["X"]
+#
+#    for soln in p.query("competitive(X)."):
+#     print "11) Competitive:", soln["X"]
+#      
+#    for soln in p.query("highspeedinternet(X)."):
+#      print "12) Has high speed internet:", soln["X"]
+#
+#    for soln in p.query("motivation(X)."):
+#      print "13) Motivation:", soln["X"]
+#
+#    for soln in p.query("machine(X)."):
+#      print "14) Development environment:", soln["X"]
 
-    for soln in p.query("employment(X)."):
-      print "6) Employment status:", soln["X"]
-      
-    for soln in p.query("featuredriven(X)."):
-      print "8) Feature Driven:", soln["X"]
-
-    for soln in p.query("mentor(X)."):
-      print "9) Mentor Driven:", soln["X"]
-      
-    for soln in p.query("targetaudience(X)."):
-      print "10) Target audience:", soln["X"]
-
-    for soln in p.query("competitive(X)."):
-      print "11) Competitive:", soln["X"]
-      
-    for soln in p.query("hsinternet(X)."):
-      print "12) Has high speed internet:", soln["X"]
-
-    for soln in p.query("motivation(X)."):
-      print "13) Motivation:", soln["X"]
-
-    for soln in p.query("machine(X)."):
-      print "14) Development environment:", soln["X"]

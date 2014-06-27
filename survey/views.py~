@@ -93,7 +93,7 @@ def Confirm(request, uuid):
   # Will need to be changed to data structure that can hold multiple values
   classSuggested = []
   for soln in p.query("classSuggestion(X)."):
-    classSuggested.append(soln["X"])
+    classSuggested.extend(soln["X"])
   
   email = settings.support_email
   return render(request, 'confirm.html', {'uuid':uuid, "email": email, 'projectdesired':projectdesired, 'educationlevel':educationlevel, 'programmingexperience':programmingexperience, 'learningpriority':learningpriority, 'employmentstatus':employmentstatus, 'featuredriven':featuredriven, 'mentordriven':mentordriven, 'audience':audience, 'competitive':competitive, 'internetstatus':internetstatus, 'motivation':motivation, 'machine':machine, 'budget':budget, 'hoursfree':hoursfree, 'timeframe':timeframe, 'classSuggested':classSuggested})
