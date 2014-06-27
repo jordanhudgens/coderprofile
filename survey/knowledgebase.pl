@@ -40,3 +40,9 @@ classSuggestion(codementorios) :- projectdesired(iphoneapp), mentor(mentordriven
 classSuggestion(codementorandroid) :- projectdesired(androidapp), mentor(mentordriven), budget(X), X >= 500, hoursfree(Y), Y >= 5, highspeedinternet(highspeed), timeframe(Z), Z >= 30.
 
 classSuggestion(codementorfrontend) :- projectdesired(frontend), mentor(mentordriven), budget(X), X >= 500, hoursfree(Y), Y >= 5, highspeedinternet(highspeed), timeframe(Z), Z >= 30.
+
+classSuggestion(codechef) :- projectdesired(generalprogramming), experience(intermediate), priority(theory), targetaudience(programmingtheory), competitive(iscompetitive).
+
+% Issues to fix:
+% ability to allow 'extensive' experienced users to get classes for intermediate learners (codechef)
+
