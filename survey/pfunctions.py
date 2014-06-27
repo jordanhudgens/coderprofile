@@ -14,8 +14,6 @@ def question_finder(question, ans):
       p.assertz('projectdesired(webapp)') 
     if ans == "Front End Website Development":
       p.assertz('projectdesired(frontend)') 
-    if ans == "No project":
-      p.assertz('projectdesired(noproject)')
     if ans == "just programming":
       p.assertz('projectdesired(generalprogramming)')
   
@@ -42,10 +40,8 @@ def question_finder(question, ans):
       p.assertz('education(associates)')
     if ans == "Bachelors":
       p.assertz('education(bachelors)') 
-    if ans == "Masters":
-      p.assertz('education(masters)')
-    if ans == "PhD":
-      p.assertz('education(phd)') 
+    if ans == "Graduate":
+      p.assertz('education(graduate)')
       
   # Question 4:  Programming Experience
   if question == "What programming experience do you have?":
@@ -89,14 +85,10 @@ def question_finder(question, ans):
   
   # Question 8:  Feature Driven Developer
   if question == "Do you like to see the potential features you're going to build before learning how to implement them?":
-    if ans == "Yes":
+    if ans == "Yes (I prefer to watch first)":
       p.assertz('featuredriven(true)')
-    if ans == "I prefer to watch first":
-      p.assertz('featuredriven(watchfirst)')
-    if ans == "No":
+    if ans == "No (I want to start coding right away)":
       p.assertz('featuredriven(false)')
-    if ans == "I want to start coding right away":
-      p.assertz('featuredriven(wantstocode)')
       
   # Question 9:  Mentor Driven Developer
   if question == "Do you like working out problems with experts or do you prefer working out issues on your own?":
@@ -153,11 +145,11 @@ def question_finder(question, ans):
   # Question 15: Timeframe for Learning 
   if question == "What is your timeframe?":
     if ans == "< 30 days":
-      p.assertz('timeframe(month)')
+      p.assertz('timeframe(30)')
     if ans == "31-90 days":
-      p.assertz('timeframe(quarter)')
+      p.assertz('timeframe(90)')
     if ans == "91+ days":
-      p.assertz('timeframe(year)')
+      p.assertz('timeframe(365)')
             
     ###################################################  
     ##################### QUERIES #####################

@@ -11,22 +11,32 @@
 
 :- use_module(library('clp/bounds')).
 
-% Determines if the student has a college level education
-graduate(X) :-  education(X), X=associates;
-                education(X), X=bachelors;
-                education(X), X=masters;
-                education(X), X=phd.
+classSuggestion(thinkfulfrontend) :- projectdesired(frontend), mentor(mentordriven), budget(Y), Y >= 1500, hoursfree(X), X >= 10, highspeedinternet(highspeed), timeframe(Z), Z >= 90.
 
-% Determines if the student is interested in mobile development
-mobiledevelopment(X) :- projectdesired(X), X=iphoneapp; projectdesired(X), X=androidapp.
+classSuggestion(thinkfulpython) :- projectdesired(webapp), mentor(mentordriven), budget(Y), Y >= 1500, hoursfree(X), X > 10, highspeedinternet(highspeed), timeframe(Z), Z >= 90.
 
-% Determines if the student is interested in web development
-webdevelopment(X) :- projectdesired(X), X=webapp.
+classSuggestion(thinkfulruby) :- projectdesired(webapp), mentor(mentordriven), budget(Y), Y >= 1500, hoursfree(X), X > 10, highspeedinternet(highspeed), timeframe(Z), Z >= 90.
 
-%classSuggestion(codechef) :- projectdesired(frontend), competitive(iscompetitive).
+classSuggestion(thinkfulios) :- projectdesired(iphoneapp), mentor(mentordriven), budget(Y), Y >= 1500, hoursfree(X), X > 10, highspeedinternet(highspeed), machine(mac), timeframe(Z), Z >= 90.
 
-classSuggestion(thinkful) :- projectdesired(frontend), mentor(mentordriven), budget(Y), Y >= 1500, hoursfree(X), X >= 10, highspeedinternet(highspeed), timeframe(quarter).
+classSuggestion(railscasts) :- projectdesired(webapp), priority(practical), featuredriven(true), highspeedinternet(highspeed).
 
-classSuggestion(secondclass) :- projectdesired(frontend), mentor(mentordriven), budget(Y), Y >= 1500, hoursfree(X), X >= 10, highspeedinternet(highspeed), timeframe(quarter).
+classSuggestion(rubyrogues) :- projectdesired(webapp), employment(fulltime).
 
-classSuggestion(pleasedontbreak) :- projectdesired(frontend), mentor(mentordriven), budget(Y), Y >= 1500, hoursfree(X), X >= 10, highspeedinternet(highspeed), timeframe(quarter).
+classSuggestion(blocror) :- projectdesired(webapp), mentor(mentordriven), budget(X), X >= 1500, hoursfree(Y), Y >= 40, highspeedinternet(highspeed), timeframe(Z), Z >= 90.
+
+classSuggestion(blocfrontend) :- projectdesired(frontend), mentor(mentordriven), budget(X), X >= 1500, hoursfree(Y), Y >= 40, highspeedinternet(highspeed), timeframe(Z), Z >= 90.
+
+classSuggestion(blocandroid) :- projectdesired(androidapp), mentor(mentordriven), budget(X), X >= 1500, hoursfree(Y), Y >= 40, highspeedinternet(highspeed), timeframe(Z), Z >= 90.
+
+classSuggestion(blocois) :- projectdesired(iphoneapp), mentor(mentordriven), budget(X), X >= 1500, hoursfree(Y), Y >= 40, highspeedinternet(highspeed), timeframe(Z), Z >= 90, machine(mac).
+
+classSuggestion(codementorpython) :- projectdesired(webapp), mentor(mentordriven), budget(X), X >= 500, hoursfree(Y), Y >= 5, highspeedinternet(highspeed), timeframe(Z), Z >= 30.
+
+classSuggestion(codementorror) :- projectdesired(webapp), mentor(mentordriven), budget(X), X >= 500, hoursfree(Y), Y >= 5, highspeedinternet(highspeed), timeframe(Z), Z >= 30.
+
+classSuggestion(codementorios) :- projectdesired(iphoneapp), mentor(mentordriven), budget(X), X >= 500, hoursfree(Y), Y >= 5, highspeedinternet(highspeed), machine(mac), timeframe(Z), Z >= 30.
+
+classSuggestion(codementorandroid) :- projectdesired(androidapp), mentor(mentordriven), budget(X), X >= 500, hoursfree(Y), Y >= 5, highspeedinternet(highspeed), timeframe(Z), Z >= 30.
+
+classSuggestion(codementorfrontend) :- projectdesired(frontend), mentor(mentordriven), budget(X), X >= 500, hoursfree(Y), Y >= 5, highspeedinternet(highspeed), timeframe(Z), Z >= 30.
