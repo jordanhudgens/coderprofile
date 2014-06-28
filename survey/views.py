@@ -259,6 +259,27 @@ def Confirm(request, uuid):
       
     if soln["X"] == "udemyfrontend4":
       soln["X"] = "<a href='https://www.udemy.com/android-programming-for-beginners' target='_blank'>Mark Lassoff - Android Mobile App Development</a>"
+      
+    if soln["X"] == "khangames1":
+      soln["X"] = "<a href='https://www.khanacademy.org/computing/cs/programming' target='_blank'>Khan Academy - Intro to Game Development</a>"
+      
+    if soln["X"] == "khangames2":
+      soln["X"] = "<a href='https://www.khanacademy.org/computing/cs/programming-games-visualizations' target='_blank'>Khan Academy - Game Development</a>"
+      
+    if soln["X"] == "khangames3":
+      soln["X"] = "<a href='https://www.khanacademy.org/computing/cs/programming-natural-simulations' target='_blank'>Khan Academy - Intermediate Game Development</a>"
+      
+    if soln["X"] == "codeplayer":
+      soln["X"] = "<a href='http://thecodeplayer.com/' target='_blank'>CodePlayer - Front End Development</a>"
+      
+    if soln["X"] == "hardwaypython1":
+      soln["X"] = "<a href='http://learnpythonthehardway.org' target='_blank'>Learn Python the Hard Way - Python Programming Manual</a>"
+      
+    if soln["X"] == "hardwaypython1":
+      soln["X"] = "<a href='http://learnpythonthehardway.org' target='_blank'>Learn Python the Hard Way - Python Programming Video Series</a>"
+      
+    if soln["X"] == "railscasts":
+      soln["X"] = "<a href='http://railscast.com' target='_blank'>Railscasts - Ruby on Rails Web Development</a>"
 
     
     ## *************************** END *************************** ##
