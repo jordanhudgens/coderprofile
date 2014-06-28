@@ -77,8 +77,55 @@ classSuggestion(udacitypython2) :- projectdesired(generalprogramming), budget(X)
 
 classSuggestion(udacityfrontend) :- projectdesired(frontend), experience(low), featuredriven(true), highspeedinternet(highspeed).
 
+classSuggestion(javaposse) :- projectdesired(androidapp), employment(fulltime).
+
+classSuggestion(stackexchange) :- projectdesired(generalprogramming), employment(fulltime).
+
+classSuggestion(hansel) :- projectdesired(webapp), employment(fulltime).
+
+classSuggestion(twittv) :- projectdesired(webapp), employment(fulltime).
+
+classSuggestion(thechangelog) :- projectdesired(generalprogramming), employment(fulltime).
+
+classSuggestion(phptownhall) :- projectdesired(webapp), employment(fulltime).
+
+classSuggestion(udemyrorbiz) :- projectdesired(webapp), budget(X), X > 0, priority(practical), featuredriven(true), targetaudience(business), highspeedinternet(highspeed).
+
+classSuggestion(udemyfrontend1) :- projectdesired(frontend), budget(X), X > 299, priority(practical), featuredriven(true), highspeedinternet(highspeed).
+
+classSuggestion(udemyphp1) :- projectdesired(webapp), budget(X), X > 0, priority(practical), featuredriven(true), highspeedinternet(highspeed).
+
+classSuggestion(udemyandroid1) :- projectdesired(androidapp), priority(practical), featuredriven(true), highspeedinternet(highspeed).
+
+classSuggestion(udemyios1) :- projectdesired(iphoneapp), priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
+
+classSuggestion(udemyios2) :- projectdesired(iphoneapp), budget(X), X > 499, priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
+
+classSuggestion(udemyios3) :- projectdesired(iphoneapp), budget(X), X > 199, priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
+
+classSuggestion(udemyios4) :- projectdesired(iphoneapp), budget(X), X > 199, priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
+
+classSuggestion(udemyios5) :- projectdesired(iphoneapp), budget(X), X > 199, priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
+
+classSuggestion(udemyrorsoc) :- projectdesired(webapp), budget(X), X > 59, priority(practical), featuredriven(true), highspeedinternet(highspeed), targetaudience(socialapps).
+
+classSuggestion(udemyios6) :- projectdesired(iphoneapp), priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
+
+classSuggestion(udemyfrontend2) :- projectdesired(frontend), priority(practical), featuredriven(true), highspeedinternet(highspeed).
+
+classSuggestion(udemygames1) :- budget(X), X > 0, priority(practical), featuredriven(true), highspeedinternet(highspeed), targetaudience(games).
+
+classSuggestion(udemygames2) :- targetaudience(games).
+
+classSuggestion(udemyphp2) :- projectdesired(webapp), priority(practical), highspeedinternet(highspeed).
+
+classSuggestion(udemyfrontend3) :- projectdesired(frontend), budget(X), X > 0, featuredriven(true), highspeedinternet(highspeed).
+
+classSuggestion(udemyfrontend4) :- projectdesired(frontend), budget(X), X > 0, featuredriven(true), highspeedinternet(highspeed).
+
 
 % Issues to fix:
 % ability to allow 'extensive' experienced users to get classes for intermediate learners (codechef)
 % How to clear the knowledge base
+% How should the system know who is a visual/kinetic/audio learner?
 
