@@ -53,6 +53,14 @@ classSuggestion(codecademypython) :- priority(theory), targetaudience(programmin
 
 classSuggestion(codecademyphp) :- priority(theory), targetaudience(ecommerce).
 
+classSuggestion(codeschoolror) :- projectdesired(webapp), budget(X), X > 0, featuredriven(true), targetaudience(socialapps), highspeedinternet(highspeed).
+
+classSuggestion(codeschoolfrontend) :- projectdesired(frontend), budget(X), X > 0, featuredriven(true), targetaudience(business), highspeedinternet(highspeed).
+
+classSuggestion(codeschoolios) :- projectdesired(iphoneapp), budget(X), X > 0, featuredriven(true), highspeedinternet(highspeed).
+
+classSuggestion(codeschoolios) :- projectdesired(iphoneapp), budget(X), X > 0, featuredriven(true), highspeedinternet(highspeed).
+
 
 % Issues to fix:
 % ability to allow 'extensive' experienced users to get classes for intermediate learners (codechef)
