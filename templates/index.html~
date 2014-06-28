@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<div class="well index-container span12">
+<div class="well index-container">
     <div class="span6 pull-left">
         <h1>CoderProfile</h1>
 

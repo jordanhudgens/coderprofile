@@ -31,7 +31,6 @@ html {
 
 .index-container {
   width: 700px;
-  margin-top: 150px;
 }
 
 
