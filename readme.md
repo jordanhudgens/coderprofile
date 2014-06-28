@@ -2,6 +2,6 @@ install requirements using `pip install -r requirements.txt`
 
 then run the following commands:
 
-'python manage.py syncdb'
+<code>python manage.py syncdb</code>
 
-'python manage.py runserver'
+<code>python manage.py runserver</code>
