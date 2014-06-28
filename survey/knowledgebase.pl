@@ -43,6 +43,18 @@ classSuggestion(codementorfrontend) :- projectdesired(frontend), mentor(mentordr
 
 classSuggestion(codechef) :- projectdesired(generalprogramming), experience(intermediate), priority(theory), targetaudience(programmingtheory), competitive(iscompetitive).
 
+classSuggestion(codecademyhtml) :- priority(theory), targetaudience(business).
+
+classSuggestion(codecademyjquery) :- priority(theory), targetaudience(business).
+
+classSuggestion(codecademyror) :- priority(theory), targetaudience(programmingtheory).
+
+classSuggestion(codecademypython) :- priority(theory), targetaudience(programmingtheory).
+
+classSuggestion(codecademyphp) :- priority(theory), targetaudience(ecommerce).
+
+
 % Issues to fix:
 % ability to allow 'extensive' experienced users to get classes for intermediate learners (codechef)
+% How to clear the knowledge base
 
