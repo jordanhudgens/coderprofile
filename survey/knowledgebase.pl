@@ -123,6 +123,18 @@ classSuggestion(udemyfrontend3) :- projectdesired(frontend), budget(X), X > 0, f
 
 classSuggestion(udemyfrontend4) :- projectdesired(frontend), budget(X), X > 0, featuredriven(true), highspeedinternet(highspeed).
 
+classSuggestion(khangames1) :- projectdesired(webapp), priority(practical), targetaudience(games), highspeedinternet(highspeed).
+
+classSuggestion(khangames2) :- projectdesired(webapp), priority(practical), targetaudience(games), highspeedinternet(highspeed), experience(low).
+
+classSuggestion(khangames3) :- projectdesired(webapp), priority(practical), targetaudience(games), highspeedinternet(highspeed), experience(intermediate).
+
+classSuggestion(codeplayer) :- projectdesired(frontend).
+
+classSuggestion(hardwaypython1) :- projectdesired(generalprogramming), priority(theory).
+
+classSuggestion(hardwaypython2) :- projectdesired(generalprogramming), priority(theory), budget(X), X > 0.
+
 
 % Issues to fix:
 % ability to allow 'extensive' experienced users to get classes for intermediate learners (codechef)
