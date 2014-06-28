@@ -199,85 +199,85 @@ def Confirm(request, uuid):
       soln["X"] = "<span class='logoBorder'><img src='http://www.hanselminutes.com/images/logo.png' width='100px'></span><p><a href='http://www.hanselminutes.com/' target='_blank'>Hansel Minutes - Programming Podcasts</a>: I'm a teacher. I speak all over to whoever will listen. I have written code that you've used. I've been blogging for over a decade and podcasting for about half that. I speak, code, write, empower, promote, braid, learn and listen - usually not in that order.</p>"
       
     if soln["X"] == "twittv":
-      soln["X"] = "<a href='http://twit.tv/sn' target='_blank'>Team Twit.tv - Programming Podcasts</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://twit.tv/files/imagecache/coverart-feed/coverart/sn300.jpg' width='100px'></span><p><a href='http://twit.tv/sn' target='_blank'>Team Twit.tv - Programming Podcasts</a>: Steve Gibson, the man who coined the term spyware and created the first anti-spyware program, creator of Spinrite and ShieldsUP, discusses the hot topics in security today with Leo Laporte. Records live every Tuesday at 1:00pm PT/4:00pm ET.</p>"
       
     if soln["X"] == "thechangelog":
-      soln["X"] = "<a href='http://thechangelog.com/podcast/' target='_blank'>The Change Log - Open Source Podcasts</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://static.squarespace.com/static/4fb1327fe4b037aee8691be3/t/5192b877e4b05340711c3bf4/1368569977503/cover-1.jpg' width='100px'></span><p><a href='http://thechangelog.com/podcast/' target='_blank'>The Change Log - Open Source Podcasts</a>: Discussions focused on the open source code community.</p>"
       
     if soln["X"] == "phptownhall":
-      soln["X"] = "<a href='http://phptownhall.com/' target='_blank'>PHP Town Hall - PHP Programming Podcasts</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www.drupal.org/files/project-images/php.png' width='100px'></span><p><a href='http://phptownhall.com/' target='_blank'>PHP Town Hall - PHP Programming Podcasts</a>: Phil, Ben and a super-star guest answer questions and talk about current events in the PHP world.</p>"
       
     if soln["X"] == "rubyrogues":
-      soln["X"] = "<a href='http://rubyrogues.com/' target='_blank'>Ruby Rogues - Ruby Programming Podcasts</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www.drupal.org/files/project-images/php.png' width='100px'></span><p><a href='http://rubyrogues.com/' target='_blank'>Ruby Rogues - Ruby Programming Podcasts</a>: In depth coverage of the Ruby Programming language community.</p>"
       
     if soln["X"] == "udemyrorbiz":
-      soln["X"] = "<a href='https://www.udemy.com/comprehensive-ruby-on-rails' target='_blank'>Edutechional - Ruby on Rails Business Application Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://udemyimages-a.akamaihd.net/course/480x270/119262_c783_2.jpg' width='100px'></span><p><a href='https://www.udemy.com/comprehensive-ruby-on-rails' target='_blank'>Edutechional - Ruby on Rails Business Application Development</a>: This course that will walk you step by step through every skill you will need to become a full stack web developer, and I do it by showing you how to build an actual production application. Starting completely from scratch I explain how to setup your environment, create the application, build in advanced features and finally deploy to the web!</p>"
       
     if soln["X"] == "udemyfrontend1":
-      soln["X"] = "<a href='https://www.udemy.com/web-development-tutorials' target='_blank'>Stone River eLearning - Front End Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/web-development-tutorials' target='_blank'>Stone River eLearning - Front End Development</a>: The design and structure of this course follows elite college curriculum. You will begin by learning the basics of each programming language and technology web developers use, and you will be creating real life projects with every new skill you learn so you're getting the entire finished puzzle instead of just pieces that you have to put together yourself.</p>"
       
     if soln["X"] == "udemyphp1":
-      soln["X"] = "<a href='https://www.udemy.com/become-a-certified-web-developer' target='_blank'>LearnToProgram.TV - PHP Web Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/become-a-certified-web-developer' target='_blank'>LearnToProgram.TV - PHP Web Development</a>: Learn What It Takes to Code Dynamic, Professional Websites and Web Apps From The Comfort of Your Own Home. Our course starts teaching basic coding principles and develops your coding skills in a variety of languages from beginner through to advanced. Here it is, once and for all, a complete guide that will take you from novice to web developer.</p>"
       
     if soln["X"] == "udemyandroid1":
-      soln["X"] = "<a href='https://www.udemy.com/learn-by-doing-android-for-beginners' target='_blank'>Ragunath Jawahar - Android Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/learn-by-doing-android-for-beginners' target='_blank'>Ragunath Jawahar - Android Mobile App Development</a>:  From the Developer of over 100 Android Applications and 6 Open Source Android Libraries.</p>"
       
     if soln["X"] == "udemyios1":
-      soln["X"] = "<a href='https://www.udemy.com/iosdevelopment' target='_blank'>The App Dojo - iOS Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/iosdevelopment' target='_blank'>The App Dojo - iOS Mobile App Development</a>: I'll teach you how to make iPhone apps with this complete iOS development tutorial.  You'll learn how to create apps using the same tools and techniques used to make the top apps in The App Store.</p>"
       
     if soln["X"] == "udemyios2":
-      soln["X"] = "<a href='https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps' target='_blank'>John Nichols - iOS Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps' target='_blank'>John Nichols - iOS Mobile App Development</a>: Our iOS Bootcamp teaches the tools needed to develop iPhone and iPad applications for iOS7. Along our journey, we will learn the syntax of Objective-C, the language used to develop for iOS, as well as important design patterns and best practices. By the end of the course, you should be able to understand and recreate many of the features seen on popular iOS applications and extend that knowledge to making apps of your own.</p>"
       
     if soln["X"] == "udemyios4":
-      soln["X"] = "<a href='https://www.udemy.com/swift-learn-apples-new-programming-language-by-examples' target='_blank'>Rick Walter - iOS Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/swift-learn-apples-new-programming-language-by-examples' target='_blank'>Rick Walter - iOS Mobile App Development</a>: Swift is a multi-paradigm programming language developed by Apple for use with iOS and OS X. Designed to replace Objective C, work began on Swift in 2010 and the first mobile app was debuted in June 2014 at the Worldwide Developers Conference. Despite its goal of replacing Objective C, Swift is capable of working alongside the more dated Objective C language while using the Cocoa and Cocoa Touch frameworks.</p>"
       
     if soln["X"] == "udemyios5":
-      soln["X"] = "<a href='https://www.udemy.com/projects-in-ios' target='_blank'>Eduonix Learning Solutions - iOS Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/projects-in-ios' target='_blank'>Eduonix Learning Solutions - iOS Mobile App Development</a>: This is a course for all programmers who will like to build on their iOS knowledge and create actual apps for the App store. This course assumes basic iOS programming knowledge but is still ideal for beginners as we are covering the APIs in detail before using them to build the projects.</p>"
       
     if soln["X"] == "udemyrorsoc":
-      soln["X"] = "<a href='https://www.udemy.com/create-and-deploy-a-web-app-in-3-hours' target='_blank'>Tiago Martins - Ruby on Rails Social App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/create-and-deploy-a-web-app-in-3-hours' target='_blank'>Tiago Martins - Ruby on Rails Social App Development</a>: This course will teach you how to combine Ruby on Rails and Facebook Connect to create a sleek final product that harnesses the power of Facebook to attract new users.</p>"
       
     if soln["X"] == "udemyios6":
-      soln["X"] = "<a href='https://www.udemy.com/learn-ios-programming-the-basics' target='_blank'>Eduonix Learning Solutions - Intro to iOS Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/learn-ios-programming-the-basics' target='_blank'>Eduonix Learning Solutions - Intro to iOS Mobile App Development</a>: This iOS course is aimed to provide a through and clear understanding of the iOS programming. We start with basic Hello world for iOS and cover the most important topics which will provide you a firm base to build your iOS Apps. This lecture uses the latest IOS SDK and uses an example based approach to teaching. We have kept the learning curve simple and focus is on conceptual learning rather than just teaching how to use a particular API. After completing the course you will understand the principle behind the API patterns and why a particular control behaves the way it does.</p>"
       
     if soln["X"] == "udemyfrontend2":
-      soln["X"] = "<a href='https://www.udemy.com/webdevelopment101_html' target='_blank'>Brian Gorman - Front End Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/webdevelopment101_html' target='_blank'>Brian Gorman - Front End Development</a>: This course is an overview of the HTML web programming standard. The course is intended for those who have never done anything with HTML or web pages and would like to build this basic knowledge for starting a career as a web developer or for learning how to program HTML for web pages. By no means will you be a world class UI developer at the end of this course, but you will have the basic understanding of building pages with HTML and HTML5, and at the end of the course you'll gain knowledge about where to go next to further your front-end web development skills.</p>"
       
     if soln["X"] == "udemygames1":
-      soln["X"] = "<a href='https://www.udemy.com/learn-c-game-development' target='_blank'>Luka Horvat - C++ Game Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/learn-c-game-development' target='_blank'>Luka Horvat - C++ Game Development</a>: Learn C++ game development is a course I made for everyone who knows how to program, but doesn't know where to start with game development. The course teaches you how to use the SFML library for C++, to start working with graphics, events and sound to create a 2D game. Everything is done step by step with the help of videos, so it's easy to follow along and learn. At the end of the course you will know what you need for game programming and will be able to start making your own games.</p>"
       
     if soln["X"] == "udemygames2":
-      soln["X"] = "<a href='https://www.udemy.com/responsive-html5-theme-development' target='_blank'>Lamin Sanneh - HTML5 Game Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/responsive-html5-theme-development' target='_blank'>Lamin Sanneh - HTML5 Game Development</a>: In this course, using direct approaches, I will teach how to build such websites. This is a very focussed course and I intentionally removed unnecessary material which I believe only distracts students from what they need to know. I know this from experience, and hence the reason the course is not that long. So lean back , relax and come along this exciting journey which is responsive web design.</p>"
       
     if soln["X"] == "udemyphp2":
-      soln["X"] = "<a href='https://www.udemy.com/php-programming-basics' target='_blank'>Stone River eLearning - PHP Web Application Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/php-programming-basics' target='_blank'>Stone River eLearning - PHP Web Application Development</a>:  In this course we cover the very basics of PHP programming, then move on to more complex topics while still making sure the course is easy to understand for those who have never programmed before.</p>"
       
     if soln["X"] == "udemyfrontend3":
-      soln["X"] = "<a href='https://www.udemy.com/learn-to-build-beautiful-html5-and-css3-websites-in-1-month' target='_blank'>Ryan Bonhardt - Front End Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/learn-to-build-beautiful-html5-and-css3-websites-in-1-month' target='_blank'>Ryan Bonhardt - Front End Development</a>: You will learn how to build your first website within 1 week with all the basics of HTML and CSS. Then we expand and add upon that knowledge with more advanced HTML and CSS as we build our second site together. To top it off we repeat this process with smaller lessons and within one month you will have a complete knowledge and ability to build startup quality websites FAST.</p>"
       
     if soln["X"] == "udemyfrontend4":
-      soln["X"] = "<a href='https://www.udemy.com/android-programming-for-beginners' target='_blank'>Mark Lassoff - Android Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www-udemy-com.global.ssl.fastly.net/static/images/v4/logo.jpg' width='100px'></span><p><a href='https://www.udemy.com/android-programming-for-beginners' target='_blank'>Mark Lassoff - Android Mobile App Development</a>: While this is a course for beginners, to be successful you need to know the basics of Java.  The course will review the more complex Java used in the Android ecosystem, but you should understand Java Basics-- Variables, Loops, Functions, Conditionals should be enough.</p>"
       
     if soln["X"] == "khangames1":
-      soln["X"] = "<a href='https://www.khanacademy.org/computing/cs/programming' target='_blank'>Khan Academy - Intro to Game Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www.intellectualrevolution.tv/wp-content/uploads/Khan-Academy-Logo.jpg' width='100px'></span><p><a href='https://www.khanacademy.org/computing/cs/programming' target='_blank'>Khan Academy - Intro to Game Development</a>: In these tutorials, you'll learn how to use the JavaScript language and the ProcessingJS library to create fun drawings and animations. If you've never programmed before, start here to learn how!</p>"
       
     if soln["X"] == "khangames2":
-      soln["X"] = "<a href='https://www.khanacademy.org/computing/cs/programming-games-visualizations' target='_blank'>Khan Academy - Game Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www.intellectualrevolution.tv/wp-content/uploads/Khan-Academy-Logo.jpg' width='100px'></span><p><a href='https://www.khanacademy.org/computing/cs/programming-games-visualizations' target='_blank'>Khan Academy - Game Development</a>: Now that you know how to program in JavaScript and make basic drawings and animations, how could you use that knowledge to make games and visualizations?</p>"
       
     if soln["X"] == "khangames3":
-      soln["X"] = "<a href='https://www.khanacademy.org/computing/cs/programming-natural-simulations' target='_blank'>Khan Academy - Intermediate Game Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='https://www.intellectualrevolution.tv/wp-content/uploads/Khan-Academy-Logo.jpg' width='100px'></span><p><a href='https://www.khanacademy.org/computing/cs/programming-natural-simulations' target='_blank'>Khan Academy - Intermediate Game Development</a>: Learn how to use JavaScript, ProcessingJS, and mathematical concepts to simulate nature in your programs. These tutorials are a derivative of 'The Nature of Code' book by Daniel Shiffman (natureofcode.com)</p>"
       
     if soln["X"] == "codeplayer":
-      soln["X"] = "<a href='http://thecodeplayer.com/' target='_blank'>CodePlayer - Front End Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://auroraiannino.be/wp-content/uploads/2014/01/thecodeplayer0.jpg' width='100px'></span><p><a href='http://thecodeplayer.com/' target='_blank'>CodePlayer - Front End Development</a>: Video style walkthroughs showing cool stuff being created from scratch.</p>"
       
     if soln["X"] == "hardwaypython1":
-      soln["X"] = "<a href='http://learnpythonthehardway.org' target='_blank'>Learn Python the Hard Way - Python Programming Manual</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://auroraiannino.be/wp-content/uploads/2014/01/thecodeplayer0.jpg' width='100px'></span><p><a href='http://learnpythonthehardway.org' target='_blank'>Learn Python the Hard Way - Python Programming Manual</a>: Read by 1.5 million people a year to learn the basics of programming, Learn Python The Hard Way is the most successful beginner programming book on the market.</p>"
       
     if soln["X"] == "hardwaypython1":
-      soln["X"] = "<a href='http://learnpythonthehardway.org' target='_blank'>Learn Python the Hard Way - Python Programming Video Series</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://auroraiannino.be/wp-content/uploads/2014/01/thecodeplayer0.jpg' width='100px'></span><p><a href='http://learnpythonthehardway.org' target='_blank'>Learn Python the Hard Way - Python Programming Video Series</a>: Read by 1.5 million people a year to learn the basics of programming, Learn Python The Hard Way is the most successful beginner programming book on the market. For $29.95 you get a complete beginner programming course with 1.7GB of Video, a PDF and ePub, and no ads on the web site."
       
     if soln["X"] == "railscasts":
-      soln["X"] = "<a href='http://railscast.com' target='_blank'>Railscasts - Ruby on Rails Web Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://geekhmer.github.io/images/logo_rails_casts.png' width='100px'></span><p><a href='http://railscasts.com/' target='_blank'>Railscasts - Ruby on Rails Web Development</a>: </p>"
 
     
     ## *************************** END *************************** ##
