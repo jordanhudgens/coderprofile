@@ -3,7 +3,7 @@
 
 {% block body %}
 
-<div class="index-container surveyBox well">
+<div class="index-container well">
     <h1>Welcome to the {{survey.name|title}}</h1>
     <div>
       {{survey.description|safe}}

@@ -2,50 +2,51 @@
 
 {% block body %}
 
-<div class="well index-container">
-    <div class="span6 pull-left">
-        <h1>CoderProfile</h1>
+<div class="index-container well">
+    <div class="homepageBox">
+        <div class="span4 pull-left well homepageBox">
+            <h1>CoderProfile</h1>
 
-        
-        <p>Everyone learns how to program differently, and what works for one student doesn't work for another. There are seemingly countless resources available on the web, however how does a student know where to start?</p>
+            
+            <p>Everyone learns how to program differently, and what works for one student doesn't work for another. There are seemingly countless resources available on the web, however how does a student know where to start?</p>
 
-        <p>When tasked in grad school at Texas Tech University for an artifical intelligence course to build an intelligent agent, I decided to develop a program that can generate a custom list of programming courses for students based on 15 different points of specification.</p> 
+            <p>When tasked in grad school at Texas Tech University for an artifical intelligence course to build an intelligent agent, I decided to develop a program that can generate a custom list of programming courses for students based on 15 different points of specification.</p> 
 
-        <p>After you have answered the questions on the following page you will be supplied with a custom curriculum that will fit with your: budget, lifestyle, available time, experience and a number of other factors. Happy coding!</p>
+            <p>After you have answered the questions on the following page you will be supplied with a custom curriculum that will fit with your: budget, lifestyle, available time, experience and a number of other factors. Happy coding!</p>
 
-    </div>
-
-
-    <div class="span4 pull-right">
-      <form action="/" method="post">{% csrf_token %}
-        <div class="category-container">
-
-            <div class="field-wrapper question-required span3 pull-right">
-              {{ response_form.interviewer.errors }}
-              <span class="asterix"> * </span>Your name
-              <span class="form-help-text">{{ response_form.interviewer.help_text}}</span>
-              <div class="form-field-body">
-                {{ response_form.interviewer }}
-              </div>
-            </div>
-
-            <div class="field-wrapper question-required span3 pull-right">
-              {{ response_form.interviewee.errors }}
-              <span class="asterix"> * </span>Your email
-              <span class="form-help-text">{{ response_form.interviewee.help_text}}</span>
-              <div class="form-field-body">
-                {{ response_form.interviewee }}
-              </div>
-            </div>
-            <div class="submit-button"><input type="submit" value="Let's get started!"></div>
         </div>
 
-        
-        <div>
-          <a href="/privacy/">Read the Privacy Statement</a>
-        </div>
-      </form>
 
+        <div class="span4 pull-right">
+          <form action="/" method="post">{% csrf_token %}
+            <div class="initialForm">
+            
+                <div class="field-wrapper question-required span3 pull-right">
+                  {{ response_form.interviewer.errors }}
+                  <h4>Your name</h4>
+                  <span class="form-help-text">{{ response_form.interviewer.help_text}}</span>
+                  <div class="form-field-body">
+                    {{ response_form.interviewer }}
+                  </div>
+                </div>
+
+                <div class="field-wrapper question-required span3 pull-right">
+                  {{ response_form.interviewee.errors }}
+                  <h4>Your email</h4>
+                  <span class="form-help-text">{{ response_form.interviewee.help_text}}</span>
+                  <div class="form-field-body">
+                    {{ response_form.interviewee }}
+                  </div>
+                </div>
+                <div class="submit-button buttonSetup">
+                    <input type="submit" value="Let's get started!"></br>
+                    <a href="/privacy/">Read the Privacy Statement</a>
+                </div>
+              
+            </div>
+          </form>
+
+        </div>
     </div>
 </div>
 

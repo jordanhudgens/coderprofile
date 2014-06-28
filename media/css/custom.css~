@@ -7,17 +7,30 @@ p { }
 
 
 html { 
-  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  background: url(../img/coding.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+body {
+  width: 850px;
+  margin-top: 150px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  opacity:0.9;
+}
 
-
-
-
+.resultsPage {
+  margin-top: 42px;
+  width: 700px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 33px;
+}
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
@@ -30,9 +43,21 @@ html {
 }
 
 .index-container {
-  width: 700px;
+  width: 850px;
+  margin-top: 150px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.homepageBox {
+  
+}
+
+.surveyBox {
+  padding: 20px;
+  margin-right: 20px;
+}
 
 
 .hero-unit h1 {
@@ -140,10 +165,19 @@ img.profile-page-img {
 }
 
 .question-required {
-  background: #E0FFD6;
+  background: #E6E6E6;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+}
+
+.initialForm {
+  margin-top: 0px;
+  opacity:0.9;
+}
+
+.buttonSetup {
+  margin-left: 90px;
 }
 
 h3.collapsible:hover {
@@ -199,6 +233,7 @@ label {
 #id_comments, #id_conditions {
   height: 50px;
 }
+
 
 ol.survey-questions {
   margin-left: 0px;

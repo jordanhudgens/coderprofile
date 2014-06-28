@@ -2,30 +2,11 @@
 
 {% block body %}
 
-Thanks! Your confirmation code is {{uuid}}. Use this to refer to your response. In case you have any questions, contact {{ email }} <br> <br> <br>
-
-<b>Results of the survey:</b> <br>
-
-1] The subject's project desired is:  {{projectdesired}} <br>
-2] The subject's budget is:  {{budget}} <br>
-3] The subject's education level is:  {{educationlevel}} <br>  
-4] The subject's programming experience is:  {{programmingexperience}} <br>
-5] The subject's learning priority is:  {{learningpriority}} <br>
-6] The subject's employment status is:  {{employmentstatus}} <br>
-7] The subject's weekly availability in hours is:  {{hoursfree}} <br>
-8] The subject's views on feature driven development are:  {{featuredriven}} <br>
-9] The subject's views on mentor driven development are:  {{mentordriven}} <br>
-10] The subject's target audience is:  {{audience}} <br>
-11] The subject's views on competitiveness are:  {{competitive}} <br>
-12] The subject's internet status is:  {{internetstatus}} <br>
-13] The subject's motivation is:  {{motivation}} <br>
-14] The subject's development machine is:  {{machine}} <br>
-15] The subject's time frame is:  {{timeframe}} <br> <br>
-
-<b>We suggest the subject enroll in the following courses:</b> <br>
-{% for myClass in classSuggested %}
-    {{myClass|safe}}<br/>
-{% endfor %}
-
+<div class="index-container surveyBox well">
+    <h2 class="resultsHeading">Based on your answers, the curriculum generator suggests taking the following courses:</h2> <br>
+    {% for myClass in classSuggested %}
+        <div class="well">{{myClass|safe}}</div>
+    {% endfor %}
+</div>
 
 {% endblock %}
