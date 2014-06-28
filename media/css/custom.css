@@ -240,3 +240,19 @@ ol.survey-questions {
   margin-left: 60px;
 }
 
+.logoBorder {
+  padding: 15px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.logoBorder img {
+  margin: 25px;
+}
+
+.classLineItem:hover {
+  background-color: #C0C0C0;
+}
+

@@ -97,28 +97,28 @@ def Confirm(request, uuid):
     ## ************** CHANGE PROLOG TERMS TO LINKS *************** ##
     
     if soln["X"] == "thinkfulfrontend":
-      soln["X"] = "<a href='http://www.thinkful.com/' target='_blank'>Thinkful - Front End Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://columbus.startupweekend.org/files/2013/07/Thinkful-Logo-Medium-300x60.png' width='100px'></span><p><a href='http://www.thinkful.com/' target='_blank'>Thinkful - Front End Development</a>: Build eight sleek and interactive websites with HTML, CSS, and JavaScript. Learn web development and apply UX design principles to create user-friendly products. Learn faster from expert developers through one-on-one online sessions.</p>"
       
     if soln["X"] == "thinkfulpython":
-      soln["X"] = "<a href='http://www.thinkful.com/' target='_blank'>Thinkful - Python Web Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://columbus.startupweekend.org/files/2013/07/Thinkful-Logo-Medium-300x60.png' width='100px'></span><p><a href='http://www.thinkful.com/' target='_blank'>Thinkful - Python Web Development</a>: Program back-end web applications with Flask and deploy to Heroku. Learn object-oriented programming and use test driven development to produce reliable, maintainable code. Learn faster from expert developers through one-on-one online sessions."
 
     if soln["X"] == "thinkfulruby":
-      soln["X"] = "<a href='http://www.thinkful.com/' target='_blank'>Thinkful - Ruby on Rails Web Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://columbus.startupweekend.org/files/2013/07/Thinkful-Logo-Medium-300x60.png' width='100px'></span><p><a href='http://www.thinkful.com/' target='_blank'>Thinkful - Ruby on Rails Web Development</a>: Build full-stack web apps using the popular framework Ruby on Rails - the quickest and most powerful way to build web apps. Launch a clone of Wikipedia from scratch and dive into the Twitter codebase. Learn faster from expert developers through one-on-one online sessions."
       
     if soln["X"] == "thinkfulios":
-      soln["X"] = "<a href='http://www.thinkful.com/' target='_blank'>Thinkful - iOS Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://columbus.startupweekend.org/files/2013/07/Thinkful-Logo-Medium-300x60.png' width='100px'></span><p><a href='http://www.thinkful.com/' target='_blank'>Thinkful - iOS Mobile App Development</a>: Build and launch iOS 7 and iOS 8 apps from scratch. You will learn to program in Swift and to use Xcode to build apps for the iPhone and iPad. By the end of the course, you will submit your work to the Apple App Store! Learn faster from expert developers through one-on-one online sessions.</p>"
       
     if soln["X"] == "blocror":
-      soln["X"] = "<a href='https://www.bloc.io/web-development' target='_blank'>Bloc - Ruby on Rails Web Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://static.squarespace.com/static/51ca1de9e4b04a2426bf6398/t/52d89fe0e4b0281856c67553/1389928416329/205329v1-max-250x250.jpg' width='100px'></span><p><a href='https://www.bloc.io/web-development' target='_blank'>Bloc - Ruby on Rails Web Development</a>: Working with an experienced mentor three times per week you will ship real web apps including versions of Wikipedia, Google Analytics, and Digg. Build a Wiki-as-a-service (SaaS) app that uses the Stripe API for payment processing. Implement email logic and social networking functionality as you build your own Digg social bookmarking app. And strengthen client-side skills as you build an analytics app with a back-end reporting dashboard. For your last two weeks, you and your mentor will work on a capstone project of your choice. This project will tie together and showcase the skills that you have learned as part of the course.</p>"
       
     if soln["X"] == "blocfrontend":
-      soln["X"] = "<a href='https://www.bloc.io/front-end-development' target='_blank'>Bloc - Front End Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://static.squarespace.com/static/51ca1de9e4b04a2426bf6398/t/52d89fe0e4b0281856c67553/1389928416329/205329v1-max-250x250.jpg' width='100px'></span><p><a href='https://www.bloc.io/front-end-development' target='_blank'>Bloc - Front End Development</a>: Working with an experienced mentor three times per week you will learn frontend frameworks and libraries including jQuery, AngularJS, and JavaScript testing frameworks. For your last two weeks, you and your mentor will work on a capstone project of your choice. This project will tie together and showcase the skills that you have learned as part of the course.</p>"
 
     if soln["X"] == "blocandroid":
-      soln["X"] = "<a href='https://www.bloc.io/android' target='_blank'>Bloc - Android Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://static.squarespace.com/static/51ca1de9e4b04a2426bf6398/t/52d89fe0e4b0281856c67553/1389928416329/205329v1-max-250x250.jpg' width='100px'></span><p><a href='https://www.bloc.io/android' target='_blank'>Bloc - Android Mobile App Development</a>: Working with an experienced mentor three times per week you will choose from a menu of apps to build, each one designed to reinforce and build upon your Android developer skills. Dive deeper into APIs and integrations with Flurry Analytics, in-app purchases, and Google AdMob in-app advertising. As a capstone project, you will choose an app idea of your own to build. To complete the capstone, design, develop, test, and launch this app to the Google Play store.</p>"
       
     if soln["X"] == "blocois":
-      soln["X"] = "<a href='https://www.bloc.io/ios' target='_blank'>Bloc - iOS Mobile App Development</a>"
+      soln["X"] = "<span class='logoBorder'><img src='http://static.squarespace.com/static/51ca1de9e4b04a2426bf6398/t/52d89fe0e4b0281856c67553/1389928416329/205329v1-max-250x250.jpg' width='100px'></span><p><a href='https://www.bloc.io/ios' target='_blank'>Bloc - iOS Mobile App Development</a>: Working with an experienced mentor three times per week you will choose from a menu of apps to build, each one designed to reinforce and build upon your iOS developer skills. Build your first iPad app. Integrate Apple tools like Maps, Game Center, and Auto Layout to make your app beautiful, reliable, and fun. As a capstone project, you will choose an app idea of your own to build. To complete the capstone, design, develop, test, and submit this app to the App Store.</p>"
       
     if soln["X"] == "codementorpython":
       soln["X"] = "<a href='https://www.codementor.io/learn-python-online' target='_blank'>CodeMentor - Python Web Development</a>"
@@ -284,8 +284,7 @@ def Confirm(request, uuid):
     classSuggested.append(soln["X"])
   
   email = settings.support_email
-  userName = Response.objects.get(self.interviewer)
-  return render(request, 'confirm.html', {'uuid':uuid, "email": email, 'projectdesired':projectdesired, 'educationlevel':educationlevel, 'programmingexperience':programmingexperience, 'learningpriority':learningpriority, 'employmentstatus':employmentstatus, 'featuredriven':featuredriven, 'mentordriven':mentordriven, 'audience':audience, 'competitive':competitive, 'internetstatus':internetstatus, 'motivation':motivation, 'machine':machine, 'budget':budget, 'hoursfree':hoursfree, 'timeframe':timeframe, 'classSuggested':classSuggested, 'classURL':classURL, 'userName': userName})
+  return render(request, 'confirm.html', {'uuid':uuid, "email": email, 'projectdesired':projectdesired, 'educationlevel':educationlevel, 'programmingexperience':programmingexperience, 'learningpriority':learningpriority, 'employmentstatus':employmentstatus, 'featuredriven':featuredriven, 'mentordriven':mentordriven, 'audience':audience, 'competitive':competitive, 'internetstatus':internetstatus, 'motivation':motivation, 'machine':machine, 'budget':budget, 'hoursfree':hoursfree, 'timeframe':timeframe, 'classSuggested':classSuggested, 'classURL':classURL})
 
 def privacy(request):
   return render(request, 'privacy.html')

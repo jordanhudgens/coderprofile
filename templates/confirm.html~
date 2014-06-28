@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<div class="index-container well">
+<div class="index-container surveyBox well">
     <h2 class="resultsHeading">Based on your answers, the curriculum generator suggests taking the following courses:</h2> <br>
     {% for myClass in classSuggested %}
         <div class="well">{{myClass|safe}}</div>
