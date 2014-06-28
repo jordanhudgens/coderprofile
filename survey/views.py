@@ -13,7 +13,7 @@ from pyswip import Prolog
 
 
 def Index(request):
-  survey = Survey.objects.get(id=1)
+  survey = Survey.objects.get(id=1)  
   if request.method == 'POST':
     form = InitialResponseForm(request.POST, survey=survey)
     if form.is_valid():
@@ -43,7 +43,7 @@ def SurveyDetail(request, survey_id, response_id):
 
 def Confirm(request, uuid):
   p = Prolog()
-  p.consult('/home/jordanhudgens/code/coderprofile/survey/knowledgebase.pl') 
+  p.consult('/home/jordanhudgens/code/coderprofile/survey/knowledgebase.pl')
   
   for soln in p.query("projectdesired(X)."):
     projectdesired = soln["X"]
@@ -92,11 +92,29 @@ def Confirm(request, uuid):
     
   # Will need to be changed to data structure that can hold multiple values
   classSuggested = []
+  classURL = []
+
   for soln in p.query("classSuggestion(X)."):
+  
+    ## ************** CHANGE PROLOG TERMS TO LINKS *************** ##
+    
+    if soln["X"] == "thinkfulfrontend":
+      soln["X"] = "<a href='http://www.thinkful.com/'>Thinkful - Front End Development</a>"
+      
+    if soln["X"] == "thinkfulpython":
+      soln["X"] = "<a href='http://www.thinkful.com/'>Thinkful - Python Web Development</a>"
+
+    if soln["X"] == "thinkfulruby":
+      soln["X"] = "<a href='http://www.thinkful.com/'>Thinkful - Ruby on Rails Web Development</a>"
+
+
+
+    
+    ## *************************** END *************************** ##
     classSuggested.append(soln["X"])
   
   email = settings.support_email
-  return render(request, 'confirm.html', {'uuid':uuid, "email": email, 'projectdesired':projectdesired, 'educationlevel':educationlevel, 'programmingexperience':programmingexperience, 'learningpriority':learningpriority, 'employmentstatus':employmentstatus, 'featuredriven':featuredriven, 'mentordriven':mentordriven, 'audience':audience, 'competitive':competitive, 'internetstatus':internetstatus, 'motivation':motivation, 'machine':machine, 'budget':budget, 'hoursfree':hoursfree, 'timeframe':timeframe, 'classSuggested':classSuggested})
+  return render(request, 'confirm.html', {'uuid':uuid, "email": email, 'projectdesired':projectdesired, 'educationlevel':educationlevel, 'programmingexperience':programmingexperience, 'learningpriority':learningpriority, 'employmentstatus':employmentstatus, 'featuredriven':featuredriven, 'mentordriven':mentordriven, 'audience':audience, 'competitive':competitive, 'internetstatus':internetstatus, 'motivation':motivation, 'machine':machine, 'budget':budget, 'hoursfree':hoursfree, 'timeframe':timeframe, 'classSuggested':classSuggested, 'classURL':classURL})
 
 def privacy(request):
   return render(request, 'privacy.html')

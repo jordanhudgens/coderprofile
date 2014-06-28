@@ -6,6 +6,8 @@ def question_finder(question, ans):
   
   # Question 1:  Type of Projects Desired to Learn
   if question == "What type of projects do you want to learn how to build?":
+    p.dynamic('projectdesired/1')      ## To account for going back
+    p.retractall('projectdesired(_)')  ## To account for going back
     if ans == "iPhone App":
       p.assertz('projectdesired(iphoneapp)')
     if ans == "Android App":
@@ -19,6 +21,8 @@ def question_finder(question, ans):
   
   # Question 2:  Budget
   if question == "What is your budget?":
+    p.dynamic('budget/1')      ## To account for going back
+    p.retractall('budget(_)')  ## To account for going back
     if ans == "$0":
       p.assertz('budget(0)')
     if ans == "$50-$250":
@@ -34,6 +38,8 @@ def question_finder(question, ans):
       
   # Question 3:  Level of Education
   if question == "What is the highest level of education you've completed?":
+    p.dynamic('education/1')      ## To account for going back
+    p.retractall('education(_)')  ## To account for going back
     if ans == "High School":
       p.assertz('education(highschool)')
     if ans == "Associates":
@@ -45,6 +51,8 @@ def question_finder(question, ans):
       
   # Question 4:  Programming Experience
   if question == "What programming experience do you have?":
+    p.dynamic('experience/1')      ## To account for going back
+    p.retractall('experience(_)')  ## To account for going back
     if ans == "None":
       p.assertz('experience(none)')
     if ans == "Low":
@@ -56,6 +64,8 @@ def question_finder(question, ans):
   
   # Question 5:  Learning Priority
   if question == "What's more of a priority for you to learn?":
+    p.dynamic('priority/1')      ## To account for going back
+    p.retractall('priority(_)')  ## To account for going back
     if ans == "Theory of coding":
       p.assertz('priority(theory)')
     if ans == "Real life projects":
@@ -63,6 +73,8 @@ def question_finder(question, ans):
   
   # Question 6:  Employment Status
   if question == "Are you currently employed full time?":
+    p.dynamic('employment/1')      ## To account for going back
+    p.retractall('employment(_)')  ## To account for going back
     if ans == "Yes":
       p.assertz('employment(fulltime)')
     if ans == "No":
@@ -70,6 +82,8 @@ def question_finder(question, ans):
   
   # Question 7:  Weekly Time Dedication
   if question == "How many hours can you dedicate to learning each week?":
+    p.dynamic('hoursfree/1')      ## To account for going back
+    p.retractall('hoursfree(_)')  ## To account for going back
     if ans == "5":
       p.assertz('hoursfree(5)')
     if ans == "6-10":
@@ -85,6 +99,8 @@ def question_finder(question, ans):
   
   # Question 8:  Feature Driven Developer
   if question == "Do you like to see the potential features you're going to build before learning how to implement them?":
+    p.dynamic('featuredriven/1')      ## To account for going back
+    p.retractall('featuredriven(_)')  ## To account for going back
     if ans == "Yes (I prefer to watch first)":
       p.assertz('featuredriven(true)')
     if ans == "No (I want to start coding right away)":
@@ -92,6 +108,8 @@ def question_finder(question, ans):
       
   # Question 9:  Mentor Driven Developer
   if question == "Do you like working out problems with experts or do you prefer working out issues on your own?":
+    p.dynamic('mentor/1')      ## To account for going back
+    p.retractall('mentor(_)')  ## To account for going back
     if ans == "I would prefer to work with an expert":
       p.assertz('mentor(mentordriven)')
     if ans == "I like working issues out on my own":
@@ -99,6 +117,8 @@ def question_finder(question, ans):
   
   # Question 10: Audience
   if question == "What type of audience do you want to develop for? I want to build: ":
+    p.dynamic('targetaudience/1')      ## To account for going back
+    p.retractall('targetaudience(_)')  ## To account for going back
     if ans == "Business applications":
       p.assertz('targetaudience(business)')
     if ans == "Games":
@@ -112,6 +132,8 @@ def question_finder(question, ans):
   
   # Question 11: Competitive
   if question == "Does testing your coding skills against other developers appeal to you?":
+    p.dynamic('competitive/1')      ## To account for going back
+    p.retractall('competitive(_)')  ## To account for going back
     if ans == "Yes":
       p.assertz('competitive(iscompetitive)')
     if ans == "No":
@@ -119,6 +141,8 @@ def question_finder(question, ans):
   
   # Question 12: High Speed Internet Status
   if question == "Do you have access to high speed internet?":
+    p.dynamic('highspeedinternet/1')      ## To account for going back
+    p.retractall('highspeedinternet(_)')  ## To account for going back
     if ans == "Yes":
       p.assertz('highspeedinternet(highspeed)')
     if ans == "No":
@@ -126,6 +150,8 @@ def question_finder(question, ans):
   
   # Question 13: Code Motivation
   if question == "Why do you want to learn to code?":
+    p.dynamic('motivation/1')      ## To account for going back
+    p.retractall('motivation(_)')  ## To account for going back
     if ans == "Build my own project":
       p.assertz('motivation(project)')
     if ans == "Learn a new hobby":
@@ -135,6 +161,8 @@ def question_finder(question, ans):
   
   # Question 14: Machine Type
   if question == "What type of computer do you have to work on?":
+    p.dynamic('machine/1')      ## To account for going back
+    p.retractall('machine(_)')  ## To account for going back
     if ans == "Mac":
       p.assertz('machine(mac)')
     if ans == "Windows":
@@ -144,6 +172,8 @@ def question_finder(question, ans):
   
   # Question 15: Timeframe for Learning 
   if question == "What is your timeframe?":
+    p.dynamic('timeframe/1')      ## To account for going back
+    p.retractall('timeframe(_)')  ## To account for going back
     if ans == "< 30 days":
       p.assertz('timeframe(30)')
     if ans == "31-90 days":

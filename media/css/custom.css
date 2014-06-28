@@ -7,7 +7,7 @@ p { }
 
 
 html { 
-  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  background: url(../img/coding.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,7 +34,11 @@ html {
   margin-top: 150px;
 }
 
-
+.center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .hero-unit h1 {
   padding-bottom: 40px;

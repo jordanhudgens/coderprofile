@@ -6,10 +6,13 @@
 %                                                          %
 % Consulted by:                                            %
 %               pfunctions.py                              %
+%               views.py                                    %
 %                                                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+:- abolish(classSuggestion/1).
 
 :- use_module(library('clp/bounds')).
+:- dynamic classSuggestion/1.
 
 classSuggestion(thinkfulfrontend) :- projectdesired(frontend), mentor(mentordriven), budget(Y), Y >= 1500, hoursfree(X), X >= 10, highspeedinternet(highspeed), timeframe(Z), Z >= 90.
 
@@ -42,6 +45,8 @@ classSuggestion(codementorandroid) :- projectdesired(androidapp), mentor(mentord
 classSuggestion(codementorfrontend) :- projectdesired(frontend), mentor(mentordriven), budget(X), X >= 500, hoursfree(Y), Y >= 5, highspeedinternet(highspeed), timeframe(Z), Z >= 30.
 
 classSuggestion(codechef) :- projectdesired(generalprogramming), experience(intermediate), priority(theory), targetaudience(programmingtheory), competitive(iscompetitive).
+
+classSuggestion(codechef) :- projectdesired(generalprogramming), experience(extensive), priority(theory), targetaudience(programmingtheory), competitive(iscompetitive).
 
 classSuggestion(codecademyhtml) :- priority(theory), targetaudience(business).
 
@@ -137,7 +142,5 @@ classSuggestion(hardwaypython2) :- projectdesired(generalprogramming), priority(
 
 
 % Issues to fix:
-% ability to allow 'extensive' experienced users to get classes for intermediate learners (codechef)
-% How to clear the knowledge base
 % How should the system know who is a visual/kinetic/audio learner?
 

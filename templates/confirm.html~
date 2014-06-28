@@ -20,11 +20,11 @@ Thanks! Your confirmation code is {{uuid}}. Use this to refer to your response. 
 12] The subject's internet status is:  {{internetstatus}} <br>
 13] The subject's motivation is:  {{motivation}} <br>
 14] The subject's development machine is:  {{machine}} <br>
-15] The subject's time frame is:  {{timeframe}} <br> </br>
+15] The subject's time frame is:  {{timeframe}} <br> <br>
 
-<b>We suggest the subject enroll in the following courses:</b>
-{% for myResult in classSuggested %}
-    {{myResult}}
+<b>We suggest the subject enroll in the following courses:</b> <br>
+{% for myClass in classSuggested %}
+    <a href="{{classURL}}">{{myClass}}</a><br/>
 {% endfor %}
 
 
