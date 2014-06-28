@@ -59,7 +59,23 @@ classSuggestion(codeschoolfrontend) :- projectdesired(frontend), budget(X), X > 
 
 classSuggestion(codeschoolios) :- projectdesired(iphoneapp), budget(X), X > 0, featuredriven(true), highspeedinternet(highspeed).
 
-classSuggestion(codeschoolios) :- projectdesired(iphoneapp), budget(X), X > 0, featuredriven(true), highspeedinternet(highspeed).
+classSuggestion(rubymonk) :- projectdesired(generalprogramming).
+
+classSuggestion(treehousefrontend) :- projectdesired(frontend), budget(X), X > 0, priority(practical), highspeedinternet(highspeed), motivation(project).
+
+classSuggestion(treehouseror) :- projectdesired(webapp), budget(X), X > 0, priority(practical), highspeedinternet(highspeed), motivation(project).
+
+classSuggestion(treehousephp) :- projectdesired(webapp), budget(X), X > 0, priority(practical), highspeedinternet(highspeed), motivation(project), targetaudience(ecommerce).
+
+classSuggestion(treehouseandroid) :- projectdesired(androidapp), budget(X), X > 0, priority(practical), highspeedinternet(highspeed), motivation(project).
+
+classSuggestion(treehouseios) :- projectdesired(iphoneapp), budget(X), X > 0, priority(practical), highspeedinternet(highspeed), motivation(project).
+
+classSuggestion(udacitypython1) :- projectdesired(generalprogramming), budget(X), X > 0, experience(low), featuredriven(true), highspeedinternet(highspeed).
+
+classSuggestion(udacitypython2) :- projectdesired(generalprogramming), budget(X), X > 0, experience(intermediate), featuredriven(true), highspeedinternet(highspeed).
+
+classSuggestion(udacityfrontend) :- projectdesired(frontend), experience(low), featuredriven(true), highspeedinternet(highspeed).
 
 
 % Issues to fix:
