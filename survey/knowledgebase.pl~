@@ -6,7 +6,7 @@
 %                                                          %
 % Consulted by:                                            %
 %               pfunctions.py                              %
-%               view.py                                    %
+%               views.py                                    %
 %                                                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 :- abolish(classSuggestion/1).

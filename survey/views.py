@@ -192,7 +192,7 @@ def Confirm(request, uuid):
       soln["X"] = "<a href='https://www.udacity.com/course/ud248' target='_blank'>Udacity - Front End Development</a>"
       
     if soln["X"] == "javaposse":
-      soln["X"] = "<a href='http://javaposse.com/' target='_blank'>Android Podcasts</a>"
+      soln["X"] = "<a href='http://javaposse.com/' target='_blank'>Java Posse - Android Podcasts</a>"
       
     if soln["X"] == "stackexchange":
       soln["X"] = "<a href='http://blog.stackoverflow.com/category/podcasts/' target='_blank'>StackExchange - Programming Podcasts</a>"
@@ -211,6 +211,54 @@ def Confirm(request, uuid):
       
     if soln["X"] == "rubyrogues":
       soln["X"] = "<a href='http://rubyrogues.com/' target='_blank'>Ruby Rogues - Ruby Programming Podcasts</a>"
+      
+    if soln["X"] == "udemyrorbiz":
+      soln["X"] = "<a href='https://www.udemy.com/comprehensive-ruby-on-rails' target='_blank'>Edutechional - Ruby on Rails Business Application Development</a>"
+      
+    if soln["X"] == "udemyfrontend1":
+      soln["X"] = "<a href='https://www.udemy.com/web-development-tutorials' target='_blank'>Stone River eLearning - Front End Development</a>"
+      
+    if soln["X"] == "udemyphp1":
+      soln["X"] = "<a href='https://www.udemy.com/become-a-certified-web-developer' target='_blank'>LearnToProgram.TV - PHP Web Development</a>"
+      
+    if soln["X"] == "udemyandroid1":
+      soln["X"] = "<a href='https://www.udemy.com/learn-by-doing-android-for-beginners' target='_blank'>Ragunath Jawahar - Android Mobile App Development</a>"
+      
+    if soln["X"] == "udemyios1":
+      soln["X"] = "<a href='https://www.udemy.com/iosdevelopment' target='_blank'>The App Dojo - iOS Mobile App Development</a>"
+      
+    if soln["X"] == "udemyios2":
+      soln["X"] = "<a href='https://www.udemy.com/the-complete-ios-7-course-learn-by-building-14-apps' target='_blank'>John Nichols - iOS Mobile App Development</a>"
+      
+    if soln["X"] == "udemyios4":
+      soln["X"] = "<a href='https://www.udemy.com/swift-learn-apples-new-programming-language-by-examples' target='_blank'>Rick Walter - iOS Mobile App Development</a>"
+      
+    if soln["X"] == "udemyios5":
+      soln["X"] = "<a href='https://www.udemy.com/projects-in-ios' target='_blank'>Eduonix Learning Solutions - iOS Mobile App Development</a>"
+      
+    if soln["X"] == "udemyrorsoc":
+      soln["X"] = "<a href='https://www.udemy.com/create-and-deploy-a-web-app-in-3-hours' target='_blank'>Tiago Martins - Ruby on Rails Social App Development</a>"
+      
+    if soln["X"] == "udemyios6":
+      soln["X"] = "<a href='https://www.udemy.com/learn-ios-programming-the-basics' target='_blank'>Eduonix Learning Solutions - Intro to iOS Mobile App Development</a>"
+      
+    if soln["X"] == "udemyfrontend2":
+      soln["X"] = "<a href='https://www.udemy.com/webdevelopment101_html' target='_blank'>Brian Gorman - Front End Development</a>"
+      
+    if soln["X"] == "udemygames1":
+      soln["X"] = "<a href='https://www.udemy.com/learn-c-game-development' target='_blank'>Luka Horvat - C++ Game Development</a>"
+      
+    if soln["X"] == "udemygames2":
+      soln["X"] = "<a href='https://www.udemy.com/responsive-html5-theme-development' target='_blank'>Lamin Sanneh - HTML5 Game Development</a>"
+      
+    if soln["X"] == "udemyphp2":
+      soln["X"] = "<a href='https://www.udemy.com/php-programming-basics' target='_blank'>Stone River eLearning - PHP Web Application Development</a>"
+      
+    if soln["X"] == "udemyfrontend3":
+      soln["X"] = "<a href='https://www.udemy.com/learn-to-build-beautiful-html5-and-css3-websites-in-1-month' target='_blank'>Ryan Bonhardt - Front End Development</a>"
+      
+    if soln["X"] == "udemyfrontend4":
+      soln["X"] = "<a href='https://www.udemy.com/android-programming-for-beginners' target='_blank'>Mark Lassoff - Android Mobile App Development</a>"
 
     
     ## *************************** END *************************** ##

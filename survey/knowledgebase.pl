@@ -106,7 +106,7 @@ classSuggestion(udemyios1) :- projectdesired(iphoneapp), priority(practical), fe
 
 classSuggestion(udemyios2) :- projectdesired(iphoneapp), budget(X), X > 499, priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
 
-classSuggestion(udemyios3) :- projectdesired(iphoneapp), budget(X), X > 199, priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
+% classSuggestion(udemyios3) :- projectdesired(iphoneapp), budget(X), X > 199, priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
 
 classSuggestion(udemyios4) :- projectdesired(iphoneapp), budget(X), X > 199, priority(practical), featuredriven(true), highspeedinternet(highspeed), machine(mac).
 
